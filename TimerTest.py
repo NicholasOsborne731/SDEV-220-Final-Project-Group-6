@@ -1,4 +1,5 @@
-# import the time module
+#import the time module *WIP NOT FUNCTIONAL IN THIS BUILD
+
 import time
 def Timer():
     # define the countdown func.

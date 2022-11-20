@@ -1,22 +1,28 @@
+#Main Program for creating apointments with a unique ID
+
 import tkinter as tk
 import logging 
 import uuid
 import re
 import time
-Field1 = "First Name"
 
+#Fields for GUI
+
+Field1 = "First Name"
 
 Field2 = "Last Name"
 
-
 Field3 = "Appointment Date"
 
-
 Field4 = "Appointment Time"
+
+#Create Unique UUID, create log file with unique id and field information
 
 UID = re.sub('\D', '', str(uuid.uuid4())[0:5])
 logging.basicConfig(filename=UID+'.log', filemode='w',level = logging.DEBUG, format='%(message)s')
 fields = Field1, Field2, Field3, Field4
+
+#Getting entries for fields 
 
 def fetch(entries):
     global t
@@ -25,6 +31,8 @@ def fetch(entries):
         text  = entry[1].get()
         print('%s: "%s"' % (field, text)) 
         logging.info('%s: "%s"' % (field, text))
+
+#Populating the fields for the GUI
 
 def makeform(root, fields):
     entries = []
