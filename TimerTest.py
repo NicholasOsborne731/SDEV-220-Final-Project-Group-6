@@ -21,7 +21,7 @@ print("current date",  current_date)
 brk = 0
 while brk != 1:
     if (appointmentDate == current_date) and (appointmentTime == current_time):
-        print("fire in the hole")
+        print("playsound")
     else:
         brk = input('Would you like to exit? y/n ')
         if(brk != "n"):
