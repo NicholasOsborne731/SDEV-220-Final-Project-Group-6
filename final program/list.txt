@@ -1,0 +1,15 @@
+needs to be done
+
+important 
+
+take appoint time and appoint date from each individual log file and enter those values as appoint time and date in log test program. 
+idea: in the gui program make the log file store the information as veriables so they can be called readily 
+
+take log program and timer program and combine them into a singular program 
+idea: make the timer and the log checker run in the same loop so theyre syncronized. 
+
+less important
+
+make the white space in the gui program bigger so i can insert my example formatting text better so i can articulate the order it needs
+to be in better. 
+idea: insert the example text under the field box text so it can have another 10 characters or so
